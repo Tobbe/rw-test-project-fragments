@@ -18,6 +18,7 @@ import { useAuth } from './auth'
 const Routes = () => {
   return (
     <Router useAuth={useAuth}>
+      <Route path="/groceries" page={GroceriesPage} name="groceries" />
       <Route path="/double" page={DoublePage} name="double" prerender />
       <Route path="/login" page={LoginPage} name="login" />
       <Route path="/signup" page={SignupPage} name="signup" />
